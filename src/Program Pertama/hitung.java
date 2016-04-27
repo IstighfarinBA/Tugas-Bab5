@@ -21,4 +21,15 @@ public class hitung {
         System.out.println("Maka Hasil pengurangan :" + hasil);
     }
 
+    public void perkalian(int a, int b) {
+        hasil = a * b;
+        System.out.println("Maka Hasil Perkaliannya:" + hasil);
+    }
+
+    public void pembagian(double a, double b) {
+        hasilbagi = a / b;
+        System.out.println("Maka Hasil Pembagiannya:" + hasilbagi);
+    }
+
+    
 }
