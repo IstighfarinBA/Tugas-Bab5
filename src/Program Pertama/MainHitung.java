@@ -25,4 +25,17 @@ public class MainHitung {
         hitung.penjumlahan(pertama, kedua);
 
     }
+
+    public static void case2() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("\t===PROGRAM PENGURANGAN===");
+        System.out.println("");
+        System.out.print("Masukkan Angka Pertama :");
+        int pertama = in.nextInt();
+        System.out.print("Masukkan Angka Kedua   :");
+        int kedua = in.nextInt();
+        //pemanggilan method static penjumlahan dengan nama class
+        hitung.pengurangan(pertama, kedua);
+    }
+
 }
