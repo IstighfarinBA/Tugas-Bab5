@@ -9,6 +9,53 @@ public class MainHitung {
      * @KELAS: SI-H
      */
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        MainHitung a = new MainHitung();
+        int pilihan, pertama, kedua;
+        hitung objek = new hitung();//deklarasi objek dengan nama objek
+        System.out.println("\t====PROGRAM CALCULATOR====");
+        System.out.println("\t==========================");
+
+        do {
+            System.out.println("");
+            System.out.println("Menu :");
+            System.out.println("\t1.Penjumlahan");
+            System.out.println("\t2.Pengurangan");
+            System.out.println("\t3.Perkalian");
+            System.out.println("\t4.Pembagian");
+            System.out.println("\t5.Penyederhanaan Pecahan");
+            System.out.println("\t0.EXIT");
+            System.out.print("Masukkan Pilihan Anda : ");
+            pilihan = in.nextInt();
+            switch (pilihan) {
+                case 1:
+                    case1();
+                    break;
+
+                case 2:
+                    case2();
+                    break;
+
+                case 3:
+                    a.case3();
+                    break;
+
+                case 4:
+                    a.case4();
+                    break;
+
+                case 5:
+                    a.case5();
+                    break;
+                default:
+                    System.out.println("Inputan Anda Tidak Valid,Silahkan Pilih Ulang Menu");break;
+                case 0:
+                    System.out.println("\t ====THANK  YOU====");
+                    System.out.println("\t===PROGRAM CLOSED===");
+            }
+
+        } while (pilihan != 0);
+
     }
 
     public static void case1() {
