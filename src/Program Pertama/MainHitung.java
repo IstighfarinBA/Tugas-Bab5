@@ -9,8 +9,6 @@ public class MainHitung {
      * @KELAS: SI-H
      */
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        MainHitung a = new MainHitung();
     }
 
     public static void case1() {
@@ -38,4 +36,31 @@ public class MainHitung {
         hitung.pengurangan(pertama, kedua);
     }
 
+    public void case3() {
+        Scanner in = new Scanner(System.in);
+        hitung objek = new hitung();
+        System.out.println("\t===PROGRAM PERKALIAN===");
+        System.out.println("");
+        System.out.print("Masukkan Angka Pertama :");
+        int pertama = in.nextInt();
+        System.out.print("Masukkan Angka Kedua   :");
+        int kedua = in.nextInt();
+        //pemanggilan method perkalian non-static dengan objek
+        objek.perkalian(pertama, kedua);
+
+    }
+
+    public void case4() {
+        Scanner in = new Scanner(System.in);
+        hitung objek = new hitung();
+        System.out.println("\t===PROGRAM PEMBAGIAN===");
+        System.out.println("");
+        System.out.print("Masukkan Angka Pertama :");
+        double pertamax = in.nextInt();
+        System.out.print("Masukkan Angka Kedua   :");
+        double keduax = in.nextInt();
+        //pemanggilan method pembagian non-static dengan objek
+        objek.pembagian(pertamax, keduax);
+
+    }
 }
