@@ -29,7 +29,7 @@ public class TokoBaju {
         System.out.println("Silahkan Melakukan Pembelian....");
         
         System.out.print("Masukkan Jumlah Pembelian JAKET A :");
-        ProsesPembelian.jaketA(in.nextInt());
+        ProsesPembelian.jaketA(in.nextInt()); //masukan user di simpan di variabel parameter method fungsi jaket
         System.out.print("Masukkan Jumlah Pembelian JAKET B :");
 
         ProsesPembelian.jaketB(in.nextInt());
