@@ -29,7 +29,7 @@ public class MainHitung {
             pilihan = in.nextInt();
             switch (pilihan) {
                 case 1:
-                    case1();
+                    case1(); //pemanggilan method static agar lebih sederhana
                     break;
 
                 case 2:
