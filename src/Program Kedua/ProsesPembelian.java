@@ -45,4 +45,18 @@ public class ProsesPembelian {
             totalC=a*diskonC;
         }
     }
+    public void notaAkhir(){
+        System.out.println("");
+        System.out.println("\t=========================");
+        System.out.println("\t===NOTA PEMBELIAN ANDA===");
+        System.out.println("\tJenis\tJumlah\tTotal");
+        System.out.println("\tJAKET A\t"+" "+jumA+"\t"+totalA);
+        System.out.println("\tJAKET B\t"+" "+jumB+"\t"+totalB);
+        System.out.println("\tJAKET C\t"+" "+jumC+"\t"+totalC);
+        System.out.println("");
+        System.out.println("\tTOTAL BAYAR :Rp."+(totalA+totalB+totalC)+",00");
+        System.out.println("\t=======TERIMA KASIH======");
+        System.out.println("\t=========================");
+    }
+    
 }
