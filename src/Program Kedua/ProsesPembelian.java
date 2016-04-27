@@ -16,5 +16,15 @@ public class ProsesPembelian {
     public final static int diskonA=95000,diskonB=120000,diskonC=160000;
     public static int jumA,jumB,jumC;
     public static int totalA,totalB,totalC;
+    public static void jaketA(int a){
+     jumA=a;
+        if (a<100){
+            totalA=a*hargaA;
+            
+        }else if(a>100){
+            totalA=a*diskonA;
+        }
+        
+    }
     
 }
