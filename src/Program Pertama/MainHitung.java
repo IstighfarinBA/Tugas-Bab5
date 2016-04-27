@@ -63,4 +63,20 @@ public class MainHitung {
         objek.pembagian(pertamax, keduax);
 
     }
+
+    public void case5() {
+        Scanner masukan = new Scanner(System.in);
+        hitung objek = new hitung();
+        System.out.println("\t===PROGRAM PENYEDERHANAAN PECAHAN===");
+        System.out.println();
+        System.out.print("Masukkan Pembilang = ");
+        int atas = masukan.nextInt();
+        System.out.print("Masukkan  Penyebut = ");
+        int bawah = masukan.nextInt();
+        System.out.println("Pecahan sebelum disederhanakan =" + atas + "/" + bawah);
+        int pembagi = objek.penyederhanaan(atas, bawah);
+        int atasAkhir = atas / pembagi;
+        int bawahAkhir = bawah / pembagi;
+        System.out.println("Pecahan setelah disederhanakan =" + atasAkhir + "/" + bawahAkhir);
+    }
 }
