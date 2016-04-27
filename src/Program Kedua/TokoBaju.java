@@ -28,6 +28,14 @@ public class TokoBaju {
         System.out.println("\tJAKET C\t\tRp." + ProsesPembelian.hargaC + ",00");
         System.out.println("Silahkan Melakukan Pembelian....");
         
+        System.out.print("Masukkan Jumlah Pembelian JAKET A :");
+        ProsesPembelian.jaketA(in.nextInt());
+        System.out.print("Masukkan Jumlah Pembelian JAKET B :");
+
+        ProsesPembelian.jaketB(in.nextInt());
+        System.out.print("Masukkan Jumlah Pembelian JAKET C :");
+        ProsesPembelian.jaketC(in.nextInt());
+        objek.notaAkhir();
         
     }
 
