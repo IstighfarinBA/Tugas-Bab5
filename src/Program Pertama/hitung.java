@@ -31,5 +31,25 @@ public class hitung {
         System.out.println("Maka Hasil Pembagiannya:" + hasilbagi);
     }
 
-    
+    public int penyederhanaan(int pembilang, int penyebut) {
+        int x = 1, y = 1;
+        int atas = pembilang, bawah = penyebut;
+        while (atas != bawah) {
+            if (atas > bawah) {
+                while ((pembilang % x) != 0) {
+                    x++;
+                }
+                atas = pembilang / x;
+                x++;
+            } else {
+                while ((penyebut % y) != 0) {
+                    y++;
+                }
+                bawah = penyebut / y;
+                y++;
+            }
+        }
+        return (atas);
+
+    }
 }
