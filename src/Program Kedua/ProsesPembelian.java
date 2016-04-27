@@ -26,5 +26,23 @@ public class ProsesPembelian {
         }
         
     }
-    
+    public static void jaketB(int a){
+        jumB=a;
+        if(a<100){
+            totalB=a*hargaB;
+            
+        }else if(a>100){
+            totalB=a*diskonB;
+        }
+        
+    }
+    public static void jaketC(int a){
+        jumC=a;
+        if(a<100){
+            totalC=a*hargaC;
+            
+        }else if(a>100){
+            totalC=a*diskonC;
+        }
+    }
 }
