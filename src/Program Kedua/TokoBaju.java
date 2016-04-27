@@ -11,6 +11,23 @@ import java.util.Scanner;
 public class TokoBaju {
 
     public static void main(String[] args) {
+        TokoBaju a=new TokoBaju();
+        a.program();
+
+    }
+    public void program(){
+        Scanner in = new Scanner(System.in);
+        ProsesPembelian objek = new ProsesPembelian();
+        System.out.println("==============CV.LABKOMDAS==============");
+        System.out.println("========================================");
+        System.out.println("");
+        System.out.println("LIST BARANG & HARGA :");
+        System.out.println("\tJenis\t\tHarga Satuan");
+        System.out.println("\tJAKET A\t\tRp." + ProsesPembelian.hargaA + ",00");
+        System.out.println("\tJAKET B\t\tRp." + ProsesPembelian.hargaB + ",00");
+        System.out.println("\tJAKET C\t\tRp." + ProsesPembelian.hargaC + ",00");
+        System.out.println("Silahkan Melakukan Pembelian....");
+        
         
     }
 
